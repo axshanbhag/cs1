@@ -1,8 +1,4 @@
 
-
-Page
-1
-of 2
 // pre-processor directives
 #include <iostream>
 #include <iomanip>
@@ -32,8 +28,7 @@ return total / 12.0;
 // function to find the highest rain amount in the array
 int highestRain(double arr[12]) {
 double largest = arr[0];
-// for loop that iterates through the array and compares the current largest
-number with each element
+// for loop that iterates through the array and compares the current largest number with each element
 for (int i=1; i<12; i++) {
 if (arr[i] > largest) {
 largest = arr[i];
@@ -44,8 +39,7 @@ return largest;
 // function to find the lowest rain amount in an array
 int lowestRain(double arr[12]) {
 double smallest = arr[0];
-// for loop that iterates through the array and compares the current smallest
-number with each element
+// for loop that iterates through the array and compares the current smallest number with each element
 for (int i=1; i<12; i++) {
 if (arr[i] < smallest) {
 smallest = arr[i];
@@ -68,8 +62,7 @@ Month " << (i+1) << ": ";
 cin >> arr1[i];
 }
 }
-// output results of total rainfall, average rainfall, highest and lowest
-rainfall with their respective functions
+// output results of total rainfall, average rainfall, highest and lowest rainfall with their respective functions
 cout << "The total rainfall for the year is: " << totalRainfall(arr1) << "
 inches" << endl;
 cout << "The average monthly rainfall is: " << averageRainfall(arr1) << "
